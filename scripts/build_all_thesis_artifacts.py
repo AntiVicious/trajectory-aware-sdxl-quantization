@@ -1,7 +1,7 @@
 """
 Build all thesis artifacts from existing data files.
 
-Inputs (expected in --data-dir, default ~/Documents/Maharshi/gem):
+Inputs (expected in --data-dir, default $SDXL_DATA_ROOT):
   layers_full.json
   allocation_70pct_full.json, allocation_55pct_full.json, allocation_40pct_full.json
   dreamsim_results.json
@@ -32,7 +32,7 @@ Outputs (in --out-dir):
 
 Usage:
   python build_all_thesis_artifacts.py \
-    --data-dir ~/Documents/Maharshi/gem \
+    --data-dir $SDXL_DATA_ROOT \
     --out-dir ./thesis_outputs
 """
 import argparse

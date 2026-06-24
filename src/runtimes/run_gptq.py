@@ -38,7 +38,7 @@ import torch
 import torch.nn as nn
 from diffusers import StableDiffusionXLPipeline
 
-BASE = Path("/home/project/Documents/Maharshi/gem")
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
 CAL_DIR = BASE / "trajectory" / "phase4_full_bench" / "gptq_calibration_data"
 OUT_DIR = BASE / "trajectory" / "phase4_full_bench" / "gptq_quantized_weights"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

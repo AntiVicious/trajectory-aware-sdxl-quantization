@@ -9,7 +9,7 @@ import json
 import shutil
 from diffusers import StableDiffusionXLPipeline
 
-BASE       = "/home/project/Documents/Maharshi/gem/"
+BASE       = os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem")
 OUT        = BASE + "benchmark_5k/"
 CKPT_BEST  = BASE + "sdxl_v111_mid_r64_1000.pt"
 STATS_PATH = BASE + "smooth_activation_stats.pt"

@@ -17,11 +17,12 @@ import argparse
 import json
 import re
 import textwrap
+import os
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-BASE = Path("/home/project/Documents/Maharshi/gem")
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
 OUT = BASE / "benchmark_5k"
 PROMPTS = json.load(open(BASE / "benchmark_prompts_5k.json"))
 FIGURE_OUT = BASE / "trajectory" / "phase4_full_bench" / "figures"

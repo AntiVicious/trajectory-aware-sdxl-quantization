@@ -25,12 +25,13 @@ Usage:
 """
 import json
 import time
+import os
 from pathlib import Path
 import torch
 from diffusers import StableDiffusionXLPipeline, EulerDiscreteScheduler
 from torchvision.utils import save_image
 
-BASE_DIR = Path("/home/project/Documents/Maharshi/gem")
+BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
 OUT_DIR = BASE_DIR / "trajectory" / "phase1_atlas_full" / "baseline"
 PREVIEW_DIR = OUT_DIR / "preview"
 OUT_DIR.mkdir(parents=True, exist_ok=True)

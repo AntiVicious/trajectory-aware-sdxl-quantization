@@ -9,14 +9,14 @@ These three scripts produce the placeholder figures in `thesis_v3/Pictures/`:
 
 Copy this entire folder into your project directory, e.g.:
 
-    ~/Documents/Maharshi/gem/figure_scripts/
+    $SDXL_DATA_ROOT/figure_scripts/
 
 The scripts default to reading from these paths on your machine:
-- `~/Documents/Maharshi/gem/trajectory/phase1_atlas_full/atlas_full.csv`
-- `~/Documents/Maharshi/gem/trajectory/phase1_atlas_full/layers_full.json`
-- `~/Documents/Maharshi/gem/trajectory/phase2_predictor_full/cv_results.csv`
-- `~/Documents/Maharshi/gem/benchmark_5k/{v1,v2,v12,v13_70,...}/`
-- `~/Documents/Maharshi/gem/benchmark_prompts_5k.json`
+- `$SDXL_DATA_ROOT/trajectory/phase1_atlas_full/atlas_full.csv`
+- `$SDXL_DATA_ROOT/trajectory/phase1_atlas_full/layers_full.json`
+- `$SDXL_DATA_ROOT/trajectory/phase2_predictor_full/cv_results.csv`
+- `$SDXL_DATA_ROOT/benchmark_5k/{v1,v2,v12,v13_70,...}/`
+- `$SDXL_DATA_ROOT/benchmark_prompts_5k.json`
 
 If your paths differ, pass them via the CLI flags shown below.
 
@@ -25,7 +25,7 @@ If your paths differ, pass them via the CLI flags shown below.
 Run from the directory that contains your `thesis_v3/` folder. For example
 if your tree looks like this:
 
-    ~/Documents/Maharshi/gem/
+    $SDXL_DATA_ROOT/
     |-- thesis_v3/
     |   `-- Pictures/   (output images go here)
     |-- trajectory/
@@ -34,7 +34,7 @@ if your tree looks like this:
     |-- benchmark_5k/
     `-- figure_scripts/   (extracted here)
 
-Then `cd ~/Documents/Maharshi/gem` and run:
+Then `cd $SDXL_DATA_ROOT` and run:
 
 ```bash
 # Activate your sdxl conda env first if needed
@@ -118,8 +118,8 @@ the output, swap indices for boring rows, re-run.
 
 ```bash
 python figure_scripts/generate_qualitative_grid.py \
-    --bench-root ~/Documents/Maharshi/gem/benchmark_5k \
-    --prompts-json ~/Documents/Maharshi/gem/benchmark_prompts_5k.json \
+    --bench-root $SDXL_DATA_ROOT/benchmark_5k \
+    --prompts-json $SDXL_DATA_ROOT/benchmark_prompts_5k.json \
     --out thesis_v3/Pictures/qualitative_grid_extended.png \
     --indices 12 47 88 153 240 410
 ```

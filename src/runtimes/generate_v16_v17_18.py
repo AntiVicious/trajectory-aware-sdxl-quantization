@@ -30,7 +30,7 @@ import torch
 import torch.nn as nn
 from diffusers import StableDiffusionXLPipeline, EulerDiscreteScheduler
 
-BASE = Path("/home/project/Documents/Maharshi/gem")
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
 PROMPTS_PATH = BASE / "benchmark_prompts_5k.json"
 ALLOC_DIR = BASE / "trajectory" / "phase3_allocator_full"
 LAYERS_JSON = BASE / "trajectory" / "phase1_atlas_full" / "layers_full.json"

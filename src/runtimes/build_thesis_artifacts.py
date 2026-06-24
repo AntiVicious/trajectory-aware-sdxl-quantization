@@ -27,6 +27,7 @@ Usage:
 """
 import json
 import re
+import os
 from pathlib import Path
 from collections import defaultdict
 import numpy as np
@@ -36,7 +37,7 @@ import matplotlib.patches as mpatches
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
 
-BASE = Path("/home/project/Documents/Maharshi/gem")
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
 OUT = BASE / "benchmark_5k"
 P1 = BASE / "trajectory" / "phase1_atlas_full"
 P2 = BASE / "trajectory" / "phase2_predictor_full"

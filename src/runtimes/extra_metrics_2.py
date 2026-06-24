@@ -17,7 +17,7 @@ from extra_metrics import (
     compute_clip_iqa, compute_pickapic, filter_existing_variants, VARIANTS,
 )
 
-BASE = Path("/home/project/Documents/Maharshi/gem")
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
 OUT = BASE / "benchmark_5k"
 
 import torch

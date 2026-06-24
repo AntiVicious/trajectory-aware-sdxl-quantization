@@ -1,0 +1,254 @@
+{
+  "clip": {
+    "v1_fp16": 0.3237,
+    "v2_int4_naive": 0.3227,
+    "v4_hybrid_best": 0.3225,
+    "v6_fully_distilled": 0.3225,
+    "v7_timestep_lora": 0.3226,
+    "v8_smoothquant_hybrid": 0.3232,
+    "v12_outlier_preserved": 0.3238,
+    "v13_70pct_trajectory": 0.3237,
+    "v13_55pct_trajectory": 0.3238,
+    "v13_40pct_trajectory": 0.3247,
+    "v14_70pct_smoothquant": 0.3234,
+    "v15_70pct_gptq": 0.3236,
+    "v15_55pct_gptq": 0.324,
+    "v15_40pct_gptq": 0.3249,
+    "v16_70pct_random_alloc": 0.3218,
+    "v16_55pct_random_alloc": 0.3193,
+    "v16_40pct_random_alloc": 0.3171,
+    "v17_70pct_no_trajectory": 0.3231,
+    "v17_55pct_no_trajectory": 0.3224,
+    "v17_40pct_no_trajectory": 0.323,
+    "v18_70pct_v12_quantizer": 0.3255,
+    "v18_55pct_v12_quantizer": 0.3247,
+    "v18_40pct_v12_quantizer": 0.3244,
+    "v19_70pct_trajectory_v12quant": 0.3237,
+    "v19_55pct_trajectory_v12quant": 0.3235,
+    "v19_40pct_trajectory_v12quant": 0.3234,
+    "v14_55pct_smoothquant": 0.3236,
+    "v14_40pct_smoothquant": 0.3256,
+    "v20_70pct_nf4_static": 0.3238,
+    "v20_55pct_nf4_static": 0.3242,
+    "v20_40pct_nf4_static": 0.3244,
+    "v21_70pct_two_pass_t10_v2": 0.3238,
+    "v21_55pct_two_pass_t10_v2": 0.3238,
+    "v21_40pct_two_pass_t10_v2": 0.324,
+    "v22_70pct_hotswap": 0.3238,
+    "v22_55pct_hotswap": 0.3238,
+    "v22_40pct_hotswap": 0.3239,
+    "v22_70pct_floor5": 0.3238,
+    "v22_55pct_floor5": 0.3238,
+    "v22_40pct_floor5": 0.3237,
+    "v24b_int8_full": 0.3237
+  },
+  "fid": {
+    "v1_fp16": 29.9,
+    "v2_int4_naive": 26.52,
+    "v4_hybrid_best": 26.53,
+    "v6_fully_distilled": 26.53,
+    "v7_timestep_lora": 26.28,
+    "v8_smoothquant_hybrid": 27.46,
+    "v12_outlier_preserved": 28.38,
+    "v13_70pct_trajectory": 29.24,
+    "v13_55pct_trajectory": 28.22,
+    "v13_40pct_trajectory": 25.33,
+    "v14_70pct_smoothquant": 37.49,
+    "v15_70pct_gptq": 29.2,
+    "v15_55pct_gptq": 28.2,
+    "v15_40pct_gptq": 25.26,
+    "v16_70pct_random_alloc": 28.2,
+    "v16_55pct_random_alloc": 32.88,
+    "v16_40pct_random_alloc": 37.03,
+    "v17_70pct_no_trajectory": 26.99,
+    "v17_55pct_no_trajectory": 25.51,
+    "v17_40pct_no_trajectory": 27.16,
+    "v18_70pct_v12_quantizer": 26.76,
+    "v18_55pct_v12_quantizer": 25.53,
+    "v18_40pct_v12_quantizer": 25.07,
+    "v19_70pct_trajectory_v12quant": 30.02,
+    "v19_55pct_trajectory_v12quant": 30.28,
+    "v19_40pct_trajectory_v12quant": 28.38,
+    "v14_55pct_smoothquant": 28.02,
+    "v14_40pct_smoothquant": 25.7,
+    "v20_70pct_nf4_static": 30.23,
+    "v20_55pct_nf4_static": 28.96,
+    "v20_40pct_nf4_static": 27.72,
+    "v21_70pct_two_pass_t10_v2": 29.97,
+    "v21_55pct_two_pass_t10_v2": 29.8,
+    "v21_40pct_two_pass_t10_v2": 29.9,
+    "v22_70pct_hotswap": 30.03,
+    "v22_55pct_hotswap": 29.95,
+    "v22_40pct_hotswap": 30.46,
+    "v22_70pct_floor5": 30.03,
+    "v22_55pct_floor5": 29.95,
+    "v22_40pct_floor5": 29.85,
+    "v24b_int8_full": 29.74
+  },
+  "memory": {
+    "v1_fp16": {
+      "size_mb": 4487,
+      "reduction": 0.0
+    },
+    "v2_int4_naive": {
+      "size_mb": 1258,
+      "reduction": 71.9
+    },
+    "v4_hybrid_best": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v6_fully_distilled": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v7_timestep_lora": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v8_smoothquant_hybrid": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v12_outlier_preserved": {
+      "size_mb": 1248,
+      "reduction": 72.2
+    },
+    "v13_70pct_trajectory": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v14_70pct_smoothquant": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v15_70pct_gptq": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v17_70pct_no_trajectory": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v18_70pct_v12_quantizer": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v16_70pct_random_alloc": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v13_55pct_trajectory": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v14_55pct_smoothquant": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v15_55pct_gptq": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v17_55pct_no_trajectory": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v18_55pct_v12_quantizer": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v16_55pct_random_alloc": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v13_40pct_trajectory": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v14_40pct_smoothquant": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v15_40pct_gptq": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v17_40pct_no_trajectory": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v18_40pct_v12_quantizer": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v16_40pct_random_alloc": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v19_70pct_trajectory_v12quant": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v19_55pct_trajectory_v12quant": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v19_40pct_trajectory_v12quant": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v20_70pct_nf4_static": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v20_55pct_nf4_static": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v20_40pct_nf4_static": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v21_70pct_two_pass_t10_v2": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v21_55pct_two_pass_t10_v2": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v21_40pct_two_pass_t10_v2": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v22_70pct_hotswap": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v22_55pct_hotswap": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v22_40pct_hotswap": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v22_70pct_floor5": {
+      "size_mb": 3592,
+      "reduction": 30.0
+    },
+    "v22_55pct_floor5": {
+      "size_mb": 2822,
+      "reduction": 45.0
+    },
+    "v22_40pct_floor5": {
+      "size_mb": 2052,
+      "reduction": 60.0
+    },
+    "v24b_int8_full": {
+      "size_mb": -1,
+      "reduction": -1
+    }
+  }
+}

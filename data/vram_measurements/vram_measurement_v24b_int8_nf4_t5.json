@@ -1,0 +1,12 @@
+{
+  "variant": "v24b_int8_nf4_t5",
+  "mode": "int8_nf4",
+  "t_split": 5,
+  "n_images": 5,
+  "setup_vram_gb": 6.795553792,
+  "avg_peak_vram_gb": 9.242704486400001,
+  "max_peak_vram_gb": 9.243737088,
+  "avg_time_per_image_s": 5.414594602584839,
+  "total_time_min": 0.45324490070343015,
+  "gpu_name": "NVIDIA L40S"
+}

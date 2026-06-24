@@ -1,0 +1,10 @@
+{
+  "variant": "v19_70",
+  "n_images": 5,
+  "pipeline_load_gb": 7.051326976,
+  "pipeline_load_peak_gb": 7.051326976,
+  "inference_peak_gb": 14.61685248,
+  "final_alloc_gb": 7.059798016,
+  "time_per_image_s": 4.8825677871704105,
+  "gpu_name": "NVIDIA L40S"
+}

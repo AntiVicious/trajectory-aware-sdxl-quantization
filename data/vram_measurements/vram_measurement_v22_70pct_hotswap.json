@@ -1,0 +1,12 @@
+{
+  "variant": "v22_70pct_hotswap",
+  "budget_pct": 70,
+  "free_fp16": false,
+  "n_images": 4800,
+  "avg_peak_vram_gb": 10.689023999999455,
+  "max_peak_vram_gb": 10.689024,
+  "final_vram_after_gen_gb": 8.256032768,
+  "avg_time_per_image_s": 1.3188812837998072,
+  "total_time_min": 105.63515787919363,
+  "gpu_name": "NVIDIA L40S"
+}

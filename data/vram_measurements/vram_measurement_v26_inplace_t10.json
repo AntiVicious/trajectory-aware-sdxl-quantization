@@ -1,0 +1,13 @@
+{
+  "variant": "v26_inplace_t10",
+  "t_split": 10,
+  "n_images": 1,
+  "setup_vram_gb": 7.087233536,
+  "avg_peak_vram_gb": 6.110886912,
+  "max_peak_vram_gb": 6.110886912,
+  "avg_time_per_image_s": 10.782939195632935,
+  "avg_swap_time_s": 7.417523622512817,
+  "total_time_min": 0.1797475298245748,
+  "n_layers_swapped": 743,
+  "gpu_name": "NVIDIA L40S"
+}

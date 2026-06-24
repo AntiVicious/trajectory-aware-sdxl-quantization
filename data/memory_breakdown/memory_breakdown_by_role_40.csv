@@ -1,0 +1,17 @@
+role,layers,FP16_count,INT4_count,FP16_MB,INT4_MB,Total_MB
+self_attn_qkv,210,0,210,0.0,301.8,301.8
+cross_attn_qkv,210,0,210,0.0,429.9,429.9
+self_attn_out,70,0,70,0.0,100.9,100.9
+cross_attn_out,70,0,70,0.0,100.6,100.6
+ffn_in,70,0,70,0.0,527.8,527.8
+ffn_out,70,0,70,0.0,277.4,277.4
+resnet_conv1,17,2,15,3.7,122.2,125.9
+resnet_conv2,17,2,15,3.7,86.9,90.6
+resnet_time_proj,17,0,17,0.0,19.5,19.5
+transformer_proj_in,11,0,11,0.0,16.9,16.9
+transformer_proj_out,11,0,11,0.0,16.5,16.5
+resnet_shortcut,11,3,8,1.4,15.6,17.1
+time_embedding,4,0,4,0.0,9.7,9.7
+sampler_conv,4,0,4,0.0,18.1,18.1
+stem_conv_in,1,1,0,0.0,0.0,0.0
+stem_conv_out,1,1,0,0.0,0.0,0.0

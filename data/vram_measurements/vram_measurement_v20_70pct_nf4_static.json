@@ -1,0 +1,13 @@
+{
+  "variant": "v20_70pct_nf4_static",
+  "budget_pct": 70,
+  "n_images": 5000,
+  "pipeline_load_gb": 7.051326976,
+  "after_quant_gb": 3.713647616,
+  "inference_peak_gb": 6.160008704,
+  "final_alloc_gb": 3.72492032,
+  "time_per_image_s": 1.74499706325531,
+  "n_linear_nf4": 690,
+  "n_conv2d_skipped_fp16": 29,
+  "gpu_name": "NVIDIA L40S"
+}

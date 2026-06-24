@@ -1,0 +1,52 @@
+{
+  "clip": {
+    "v1_fp16": 0.3237,
+    "v2_int4_naive": 0.3227,
+    "v4_hybrid_best": 0.3225,
+    "v6_fully_distilled": 0.3225,
+    "v7_timestep_lora": 0.3226,
+    "v8_smoothquant_hybrid": 0.3232,
+    "v12_outlier_preserved": 0.3238
+  },
+  "fid": {
+    "v1_fp16": 29.9,
+    "v2_int4_naive": 26.52,
+    "v4_hybrid_best": 26.53,
+    "v6_fully_distilled": 26.53,
+    "v7_timestep_lora": 26.27,
+    "v8_smoothquant_hybrid": 27.46,
+    "v12_outlier_preserved": 28.38
+  },
+  "memory": {
+    "v1_fp16": {
+      "size_mb": 4487,
+      "reduction": 0.0
+    },
+    "v2_int4_naive": {
+      "size_mb": 1258,
+      "reduction": 71.9
+    },
+    "v4_hybrid_best": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v6_fully_distilled": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v7_timestep_lora": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v8_smoothquant_hybrid": {
+      "size_mb": 1228,
+      "reduction": 72.6
+    },
+    "v12_outlier_preserved": {
+      "size_mb": 1248,
+      "reduction": 72.2
+    }
+  },
+  "n_images": 5000,
+  "n_real_reference": 5000
+}

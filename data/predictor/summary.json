@@ -1,0 +1,72 @@
+{
+  "atlas_csv": "atlas_full.csv",
+  "n_cells": 3970,
+  "n_layers": 794,
+  "metric": "CLIP-feature distance (1 - cos)",
+  "clip_dist_range": [
+    3.0249357223510742e-06,
+    0.1156053617596626
+  ],
+  "cv_scheme": "GroupKFold(5)-by-layer",
+  "cv_results": {
+    "gbr_dense": {
+      "mae_log10": 0.18082204461097717,
+      "r2": 0.9537847638130188,
+      "rank_corr": 0.9676404926661423
+    },
+    "gbr_role_block": {
+      "mae_log10": 0.15056434273719788,
+      "r2": 0.9684928059577942,
+      "rank_corr": 0.9798029244821584
+    },
+    "mlp_dense": {
+      "mae_log10": 0.18117457628250122,
+      "r2": 0.9530285596847534,
+      "rank_corr": 0.9674133093290196
+    },
+    "mlp_role_block": {
+      "mae_log10": 0.14942145347595215,
+      "r2": 0.9636968374252319,
+      "rank_corr": 0.9778411543483567
+    }
+  },
+  "winner": "gbr_role_block",
+  "feat_dense": [
+    "layer_type",
+    "log_n_in",
+    "log_n_out",
+    "log_n_params",
+    "step_norm"
+  ],
+  "feat_role_block": [
+    "layer_type",
+    "log_n_in",
+    "log_n_out",
+    "log_n_params",
+    "step_norm",
+    "role_cross_attn_out",
+    "role_cross_attn_qkv",
+    "role_ffn_in",
+    "role_ffn_out",
+    "role_resnet_conv1",
+    "role_resnet_conv2",
+    "role_resnet_shortcut",
+    "role_resnet_time_proj",
+    "role_sampler_conv",
+    "role_self_attn_out",
+    "role_self_attn_qkv",
+    "role_stem_conv_in",
+    "role_stem_conv_out",
+    "role_time_embedding",
+    "role_transformer_proj_in",
+    "role_transformer_proj_out",
+    "block_-1",
+    "block_0",
+    "block_1",
+    "block_2",
+    "block_3",
+    "block_4",
+    "block_5",
+    "block_6"
+  ]
+}

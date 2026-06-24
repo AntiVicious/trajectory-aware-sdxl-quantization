@@ -1,0 +1,11 @@
+{
+  "variant": "v26v13_40pct_t10",
+  "budget_pct": 40,
+  "t_split": 10,
+  "n_images": 200,
+  "n_quantized_layers": 743,
+  "avg_peak_vram_gb": 7.195379466240005,
+  "max_peak_vram_gb": 7.230529536,
+  "avg_time_per_image_s": 11.566824388504028,
+  "gpu_name": "NVIDIA L40S"
+}

@@ -1,0 +1,371 @@
+{
+  "vs_v1": {
+    "v2_int4_naive": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5429182107076049,
+      "std_prob": 0.13898957962922265,
+      "wins": 460,
+      "losses": 239,
+      "ties": 301,
+      "win_rate": 0.46,
+      "loss_rate": 0.239,
+      "tie_rate": 0.301
+    },
+    "v4_hybrid_best": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5274308826252818,
+      "std_prob": 0.14695210836284908,
+      "wins": 432,
+      "losses": 291,
+      "ties": 277,
+      "win_rate": 0.432,
+      "loss_rate": 0.291,
+      "tie_rate": 0.277
+    },
+    "v6_fully_distilled": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5274308826252818,
+      "std_prob": 0.14695210836284908,
+      "wins": 432,
+      "losses": 291,
+      "ties": 277,
+      "win_rate": 0.432,
+      "loss_rate": 0.291,
+      "tie_rate": 0.277
+    },
+    "v7_timestep_lora": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.531170826010406,
+      "std_prob": 0.14790902978777667,
+      "wins": 437,
+      "losses": 279,
+      "ties": 284,
+      "win_rate": 0.437,
+      "loss_rate": 0.279,
+      "tie_rate": 0.284
+    },
+    "v8_smoothquant_hybrid": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.49395511849224566,
+      "std_prob": 0.15263956071111148,
+      "wins": 323,
+      "losses": 394,
+      "ties": 283,
+      "win_rate": 0.323,
+      "loss_rate": 0.394,
+      "tie_rate": 0.283
+    },
+    "v12_outlier_preserved": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.4902989168688655,
+      "std_prob": 0.1390757425797867,
+      "wins": 311,
+      "losses": 380,
+      "ties": 309,
+      "win_rate": 0.311,
+      "loss_rate": 0.38,
+      "tie_rate": 0.309
+    },
+    "v13_70pct_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5061380866318941,
+      "std_prob": 0.051680364990379694,
+      "wins": 158,
+      "losses": 103,
+      "ties": 739,
+      "win_rate": 0.158,
+      "loss_rate": 0.103,
+      "tie_rate": 0.739
+    },
+    "v13_55pct_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5034977401643992,
+      "std_prob": 0.07130718520512354,
+      "wins": 236,
+      "losses": 196,
+      "ties": 568,
+      "win_rate": 0.236,
+      "loss_rate": 0.196,
+      "tie_rate": 0.568
+    },
+    "v13_40pct_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.49307997328042985,
+      "std_prob": 0.12818848668786084,
+      "wins": 307,
+      "losses": 357,
+      "ties": 336,
+      "win_rate": 0.307,
+      "loss_rate": 0.357,
+      "tie_rate": 0.336
+    },
+    "v14_70pct_smoothquant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5049403868168593,
+      "std_prob": 0.05892410688154103,
+      "wins": 188,
+      "losses": 149,
+      "ties": 663,
+      "win_rate": 0.188,
+      "loss_rate": 0.149,
+      "tie_rate": 0.663
+    },
+    "v15_70pct_gptq": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5006593311578036,
+      "std_prob": 0.05223283183948509,
+      "wins": 135,
+      "losses": 134,
+      "ties": 731,
+      "win_rate": 0.135,
+      "loss_rate": 0.134,
+      "tie_rate": 0.731
+    },
+    "v15_55pct_gptq": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.49731457836925985,
+      "std_prob": 0.07306624556679266,
+      "wins": 217,
+      "losses": 225,
+      "ties": 558,
+      "win_rate": 0.217,
+      "loss_rate": 0.225,
+      "tie_rate": 0.558
+    },
+    "v15_40pct_gptq": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.479839044213295,
+      "std_prob": 0.12593969708153127,
+      "wins": 264,
+      "losses": 412,
+      "ties": 324,
+      "win_rate": 0.264,
+      "loss_rate": 0.412,
+      "tie_rate": 0.324
+    },
+    "v16_70pct_random_alloc": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.47949876133725045,
+      "std_prob": 0.15063422618106426,
+      "wins": 299,
+      "losses": 415,
+      "ties": 286,
+      "win_rate": 0.299,
+      "loss_rate": 0.415,
+      "tie_rate": 0.286
+    },
+    "v16_55pct_random_alloc": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.39480676995869723,
+      "std_prob": 0.16648915442588919,
+      "wins": 176,
+      "losses": 632,
+      "ties": 192,
+      "win_rate": 0.176,
+      "loss_rate": 0.632,
+      "tie_rate": 0.192
+    },
+    "v16_40pct_random_alloc": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.37539638073509557,
+      "std_prob": 0.16465600992230645,
+      "wins": 143,
+      "losses": 694,
+      "ties": 163,
+      "win_rate": 0.143,
+      "loss_rate": 0.694,
+      "tie_rate": 0.163
+    },
+    "v17_70pct_no_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5258104675412179,
+      "std_prob": 0.13968183067264475,
+      "wins": 417,
+      "losses": 280,
+      "ties": 303,
+      "win_rate": 0.417,
+      "loss_rate": 0.28,
+      "tie_rate": 0.303
+    },
+    "v17_55pct_no_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5021276433393359,
+      "std_prob": 0.15205703172106488,
+      "wins": 355,
+      "losses": 355,
+      "ties": 290,
+      "win_rate": 0.355,
+      "loss_rate": 0.355,
+      "tie_rate": 0.29
+    },
+    "v17_40pct_no_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.45752264826372263,
+      "std_prob": 0.1570169297800385,
+      "wins": 270,
+      "losses": 497,
+      "ties": 233,
+      "win_rate": 0.27,
+      "loss_rate": 0.497,
+      "tie_rate": 0.233
+    },
+    "v18_70pct_v12_quantizer": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.4962603370249271,
+      "std_prob": 0.15434478464293838,
+      "wins": 352,
+      "losses": 394,
+      "ties": 254,
+      "win_rate": 0.352,
+      "loss_rate": 0.394,
+      "tie_rate": 0.254
+    },
+    "v18_55pct_v12_quantizer": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.47891749946773055,
+      "std_prob": 0.1588044305664271,
+      "wins": 301,
+      "losses": 441,
+      "ties": 258,
+      "win_rate": 0.301,
+      "loss_rate": 0.441,
+      "tie_rate": 0.258
+    },
+    "v18_40pct_v12_quantizer": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.48083414217084647,
+      "std_prob": 0.16366756844907052,
+      "wins": 327,
+      "losses": 431,
+      "ties": 242,
+      "win_rate": 0.327,
+      "loss_rate": 0.431,
+      "tie_rate": 0.242
+    },
+    "v19_70pct_trajectory_v12quant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5007823741137981,
+      "std_prob": 0.040079825184575875,
+      "wins": 91,
+      "losses": 72,
+      "ties": 837,
+      "win_rate": 0.091,
+      "loss_rate": 0.072,
+      "tie_rate": 0.837
+    },
+    "v19_55pct_trajectory_v12quant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.48698773731291295,
+      "std_prob": 0.060557160227795746,
+      "wins": 128,
+      "losses": 227,
+      "ties": 645,
+      "win_rate": 0.128,
+      "loss_rate": 0.227,
+      "tie_rate": 0.645
+    },
+    "v19_40pct_trajectory_v12quant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.48974333004653453,
+      "std_prob": 0.1500892487861979,
+      "wins": 314,
+      "losses": 394,
+      "ties": 292,
+      "win_rate": 0.314,
+      "loss_rate": 0.394,
+      "tie_rate": 0.292
+    }
+  },
+  "head_to_head": {
+    "v13_70pct_trajectory_vs_v19_70pct_trajectory_v12quant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5053558186590672,
+      "std_prob": 0.045197608185652674,
+      "wins": 135,
+      "losses": 97,
+      "ties": 768,
+      "win_rate": 0.135,
+      "loss_rate": 0.097,
+      "tie_rate": 0.768
+    },
+    "v13_55pct_trajectory_vs_v19_55pct_trajectory_v12quant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5164351889938116,
+      "std_prob": 0.07297493414002407,
+      "wins": 289,
+      "losses": 158,
+      "ties": 553,
+      "win_rate": 0.289,
+      "loss_rate": 0.158,
+      "tie_rate": 0.553
+    },
+    "v13_40pct_trajectory_vs_v19_40pct_trajectory_v12quant": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.50249887772277,
+      "std_prob": 0.15205965570380167,
+      "wins": 371,
+      "losses": 346,
+      "ties": 283,
+      "win_rate": 0.371,
+      "loss_rate": 0.346,
+      "tie_rate": 0.283
+    },
+    "v13_70pct_trajectory_vs_v12_outlier_preserved": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5152842453420162,
+      "std_prob": 0.13897094293340878,
+      "wins": 396,
+      "losses": 305,
+      "ties": 299,
+      "win_rate": 0.396,
+      "loss_rate": 0.305,
+      "tie_rate": 0.299
+    },
+    "v19_70pct_trajectory_v12quant_vs_v12_outlier_preserved": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5103165553510189,
+      "std_prob": 0.1385741482572438,
+      "wins": 383,
+      "losses": 321,
+      "ties": 296,
+      "win_rate": 0.383,
+      "loss_rate": 0.321,
+      "tie_rate": 0.296
+    },
+    "v13_70pct_trajectory_vs_v17_70pct_no_trajectory": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.48019091877155007,
+      "std_prob": 0.14001511708985612,
+      "wins": 297,
+      "losses": 397,
+      "ties": 306,
+      "win_rate": 0.297,
+      "loss_rate": 0.397,
+      "tie_rate": 0.306
+    },
+    "v13_70pct_trajectory_vs_v16_70pct_random_alloc": {
+      "n": 1000,
+      "avg_prob_a_preferred": 0.5261506797745824,
+      "std_prob": 0.1496468750810789,
+      "wins": 415,
+      "losses": 285,
+      "ties": 300,
+      "win_rate": 0.415,
+      "loss_rate": 0.285,
+      "tie_rate": 0.3
+    }
+  },
+  "metric_used": "avg_prob_a_preferred",
+  "n_prompts": 1000,
+  "sanity_v1_vs_v1": {
+    "n": 100,
+    "avg_prob_a_preferred": 0.5,
+    "std_prob": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "ties": 100,
+    "win_rate": 0.0,
+    "loss_rate": 0.0,
+    "tie_rate": 1.0
+  }
+}

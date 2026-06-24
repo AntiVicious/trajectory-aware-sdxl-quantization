@@ -1,0 +1,13 @@
+{
+  "variant": "v21_70pct_two_pass_t10",
+  "budget_pct": 70,
+  "t_split": 10,
+  "n_images": 195,
+  "avg_peak_vram_gb": 7.2996254719999705,
+  "max_peak_vram_gb": 7.299625472,
+  "avg_time_per_image_s": 3.3330883723038895,
+  "total_time_min": 10.836776312192281,
+  "n_linear_nf4": 690,
+  "n_conv2d_skipped_fp16": 29,
+  "gpu_name": "NVIDIA L40S"
+}

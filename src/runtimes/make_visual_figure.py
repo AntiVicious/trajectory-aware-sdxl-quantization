@@ -22,7 +22,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 PROMPTS = json.load(open(BASE / "benchmark_prompts_5k.json"))
 FIGURE_OUT = BASE / "trajectory" / "phase4_full_bench" / "figures"

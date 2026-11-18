@@ -38,7 +38,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from diffusers import StableDiffusionXLPipeline
 
-BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 ALLOC_DIR = BASE / "trajectory" / "phase3_allocator_full"
 PROMPTS_PATH = BASE / "benchmark_prompts_5k.json"

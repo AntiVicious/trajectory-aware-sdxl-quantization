@@ -8,6 +8,7 @@ across columns: V1 (FP16), V19-70 (best), V13-70 (framework), V12 (prior best), 
 Usage:
     python make_qualitative_grid_v19.py [--n-prompts 10]
 """
+import os
 import argparse
 import json
 import textwrap
@@ -15,7 +16,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 
 VARIANTS = [

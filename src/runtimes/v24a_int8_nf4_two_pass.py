@@ -37,7 +37,7 @@ from diffusers import (
     EulerDiscreteScheduler,
 )
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 PROMPTS_PATH = BASE / "benchmark_prompts_5k.json"
 OUT = BASE / "benchmark_5k"
 

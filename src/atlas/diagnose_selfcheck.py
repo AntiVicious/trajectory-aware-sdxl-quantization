@@ -20,7 +20,7 @@ from diffusers import (
 from transformers import CLIPTextModel, CLIPTextModelWithProjection, CLIPTokenizer
 from torchvision.utils import save_image
 
-BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "trajectory" / "phase1_atlas_full" / "baseline" / "diagnostics"
 OUT.mkdir(parents=True, exist_ok=True)
 

@@ -1,11 +1,12 @@
 # Save as inspect_v19_vs_v13.py
+import os
 import json
 from pathlib import Path
 from PIL import Image
 import torch
 import numpy as np
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 PROMPTS = json.load(open(BASE / "benchmark_prompts_5k.json"))
 

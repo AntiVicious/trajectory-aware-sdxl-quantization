@@ -2,19 +2,20 @@
 Make a side-by-side comparison grid: V1 / V13-70 / V19-70 / V12
 
 Generates three grids:
-  - V19 wins (V19 closer to V1 than V13) — these test if V19 is genuinely better
+  - V19 wins (V19 closer to V1 than V13) — these test whether V19 is better
   - V13 wins (V13 closer to V1 than V19) — these test if V19 has failure cases
   - Ties (both very close to V1) — these test that the framework basically works
 
 Usage:
     python make_comparison_grid.py
 """
+import os
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 import json
 import textwrap
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 
 # Filenames from inspect_v19_vs_v13.py output

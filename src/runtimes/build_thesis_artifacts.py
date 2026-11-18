@@ -37,7 +37,7 @@ import matplotlib.patches as mpatches
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
 
-BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 P1 = BASE / "trajectory" / "phase1_atlas_full"
 P2 = BASE / "trajectory" / "phase2_predictor_full"

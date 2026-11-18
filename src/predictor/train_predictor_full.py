@@ -44,7 +44,7 @@ from scipy.stats import spearmanr
 import matplotlib.pyplot as plt
 
 
-BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 ATLAS_CSV = BASE_DIR / "trajectory" / "phase1_atlas_full" / "results" / "atlas_full.csv"
 LAYERS_JSON = BASE_DIR / "trajectory" / "phase1_atlas_full" / "layers_full.json"
 OUT_DIR = BASE_DIR / "trajectory" / "phase2_predictor_full"

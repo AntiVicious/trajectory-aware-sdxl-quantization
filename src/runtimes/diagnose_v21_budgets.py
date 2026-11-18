@@ -10,10 +10,11 @@ layer level (Conv2d gets dropped because bnb skips Conv2d).
 Usage:
     python diagnose_v21_budgets.py
 """
+import os
 from pathlib import Path
 import json
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 ALLOC_DIR = BASE / "trajectory" / "phase3_allocator_full"
 LAYERS_JSON = BASE / "trajectory" / "phase1_atlas_full" / "layers_full.json"
 

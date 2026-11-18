@@ -20,9 +20,9 @@ import matplotlib.colors as mcolors
 def find_default_atlas_csv():
     """Try several plausible locations so the script Just Works on most machines."""
     candidates = [
-        os.path.expanduser("~/Documents/Maharshi/gem/trajectory/phase1_atlas_full/atlas_full.csv"),
+        os.path.join(os.environ.get("SDXL_DATA_ROOT", "."), "trajectory/phase1_atlas_full/atlas_full.csv"),
         # Try the cv_results.csv too -- it has the same atlas data plus predictor preds
-        os.path.expanduser("~/Documents/Maharshi/gem/trajectory/phase2_predictor_full/cv_results.csv"),
+        os.path.join(os.environ.get("SDXL_DATA_ROOT", "."), "trajectory/phase2_predictor_full/cv_results.csv"),
         "trajectory/phase1_atlas_full/atlas_full.csv",
         "trajectory/phase2_predictor_full/cv_results.csv",
         "../trajectory/phase1_atlas_full/atlas_full.csv",

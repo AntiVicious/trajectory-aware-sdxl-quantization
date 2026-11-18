@@ -19,7 +19,7 @@ previous one. All commands assume the working directory is the repo root.
 ```bash
    export SDXL_DATA_ROOT=/path/to/your/sdxl/working/dir
 ```
-   Add this to `~/.bashrc` to persist it. If unset, the scripts default to `/home/project/Documents/Maharshi/gem` (the original development path).
+   Add this to `~/.bashrc` to persist it. If unset, the scripts use the current directory.
 4. **Public assets** (not in the repo, fetch separately):
    - **COCO val2017 images** for FID computation. Download from
      <https://cocodataset.org/#download> and unpack to a path you'll reference.

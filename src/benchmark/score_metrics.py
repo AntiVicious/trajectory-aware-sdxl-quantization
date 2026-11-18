@@ -8,7 +8,7 @@ from PIL import Image
 from transformers import CLIPProcessor, CLIPModel
 from cleanfid import fid
 
-BASE     = os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem")
+BASE     = os.environ.get("SDXL_DATA_ROOT", ".")
 OUT      = BASE + "benchmark_5k/"
 REAL_DIR = BASE + "val2017/"
 PROMPTS  = json.load(open(BASE + "benchmark_prompts_5k.json"))

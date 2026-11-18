@@ -14,7 +14,7 @@ import torch
 import torch.nn as nn
 from diffusers import UNet2DConditionModel
 
-BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT_DIR = BASE_DIR / "trajectory" / "phase1_atlas_full"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 OUT_JSON = OUT_DIR / "layers_full.json"

@@ -27,7 +27,7 @@ import torch.nn.functional as F
 import numpy as np
 from PIL import Image
 
-BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 PROMPTS = json.load(open(BASE / "benchmark_prompts_5k.json"))
 

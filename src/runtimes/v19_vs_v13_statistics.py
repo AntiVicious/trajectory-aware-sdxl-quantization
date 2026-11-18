@@ -21,7 +21,7 @@ from PIL import Image
 import numpy as np
 from scipy import stats
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 PROMPTS = json.load(open(BASE / "benchmark_prompts_5k.json"))
 

@@ -25,7 +25,7 @@ import torch
 import torch.nn as nn
 from diffusers import StableDiffusionXLPipeline
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 ALLOC_DIR = BASE / "trajectory" / "phase3_allocator_full"
 
 RANKS_TO_TEST = [8, 16, 32, 64]

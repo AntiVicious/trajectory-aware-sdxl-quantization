@@ -42,7 +42,7 @@ DEFAULT_VARIANT_DIRS = [
 
 def find_default_bench_root():
     candidates = [
-        os.path.expanduser("~/Documents/Maharshi/gem/benchmark_5k"),
+        os.path.join(os.environ.get("SDXL_DATA_ROOT", "."), "benchmark_5k"),
         "benchmark_5k",
         "../benchmark_5k",
     ]
@@ -54,7 +54,7 @@ def find_default_bench_root():
 
 def find_default_prompts_json():
     candidates = [
-        os.path.expanduser("~/Documents/Maharshi/gem/benchmark_prompts_5k.json"),
+        os.path.join(os.environ.get("SDXL_DATA_ROOT", "."), "benchmark_prompts_5k.json"),
         "benchmark_prompts_5k.json",
         "../benchmark_prompts_5k.json",
     ]

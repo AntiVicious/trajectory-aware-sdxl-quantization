@@ -33,7 +33,7 @@ from pathlib import Path
 import numpy as np
 import pulp
 
-BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 LAYERS_JSON = BASE_DIR / "trajectory" / "phase1_atlas_full" / "layers_full.json"
 P2_DIR = BASE_DIR / "trajectory" / "phase2_predictor_full"
 PREDICTOR_PATH = P2_DIR / "models" / "gbr_role_block_final.pkl"

@@ -9,12 +9,13 @@ the model output object if needed.
 Usage:
     python patch_score_extra_metrics.py
 """
+import os
 import re
 import sys
 from pathlib import Path
 
 candidates = [
-    Path.home() / "Documents/Maharshi/gem/trajectory/phase4_full_bench/score_extra_metrics_v19.py",
+    Path(os.environ.get("SDXL_DATA_ROOT", ".")) / "trajectory/phase4_full_bench/score_extra_metrics_v19.py",
     Path("./score_extra_metrics_v19.py"),
 ]
 target = None

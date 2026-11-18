@@ -31,7 +31,7 @@ PREDICTOR_COLS = [
 
 def find_default_cv_csv():
     candidates = [
-        os.path.expanduser("~/Documents/Maharshi/gem/trajectory/phase2_predictor_full/cv_results.csv"),
+        os.path.join(os.environ.get("SDXL_DATA_ROOT", "."), "trajectory/phase2_predictor_full/cv_results.csv"),
         "trajectory/phase2_predictor_full/cv_results.csv",
         "../trajectory/phase2_predictor_full/cv_results.csv",
         "phase2_predictor_full/cv_results.csv",

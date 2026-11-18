@@ -25,7 +25,7 @@ import torch
 import torch.nn as nn
 from diffusers import StableDiffusionXLPipeline
 
-BASE = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 PROMPTS_PATH = BASE / "benchmark_prompts_5k.json"
 GPTQ_DIR = BASE / "trajectory" / "phase4_full_bench" / "gptq_quantized_weights"
 LAYERS_JSON = BASE / "trajectory" / "phase1_atlas_full" / "layers_full.json"

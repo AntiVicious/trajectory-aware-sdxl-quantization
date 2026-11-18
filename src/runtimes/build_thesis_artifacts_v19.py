@@ -23,6 +23,7 @@ Outputs:
       ablation_bar_chart.png
     summary.json
 """
+import os
 import json
 import re
 from pathlib import Path
@@ -33,7 +34,7 @@ import matplotlib.pyplot as plt
 from PIL import Image, ImageDraw, ImageFont
 import textwrap
 
-BASE = Path.home() / "Documents" / "Maharshi" / "gem"
+BASE = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 OUT = BASE / "benchmark_5k"
 P1 = BASE / "trajectory" / "phase1_atlas_full"
 P2 = BASE / "trajectory" / "phase2_predictor_full"

@@ -211,6 +211,10 @@ scripts/       Entry points + figure-generation CLIs (see scripts/README.md)
 archive/v1_to_v12/  Legacy hand-engineered variants that preceded the trajectory framework
 ```
 
+The project was developed on a university lab GPU server between May 2025 and
+May 2026 and published here after the thesis was submitted, so the Git history
+starts at that point.
+
 ## Reproducing this
 
 See [REPRODUCTION.md](REPRODUCTION.md) for the full phase-by-phase walkthrough

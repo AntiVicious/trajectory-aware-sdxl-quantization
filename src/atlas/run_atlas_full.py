@@ -29,7 +29,7 @@ from diffusers import UNet2DConditionModel, AutoencoderKL, EulerDiscreteSchedule
 from transformers import CLIPModel
 from torchvision import transforms
 
-BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "/home/project/Documents/Maharshi/gem"))
+BASE_DIR = Path(os.environ.get("SDXL_DATA_ROOT", "."))
 ATLAS_DIR = BASE_DIR / "trajectory" / "phase1_atlas_full"
 BASELINE_PATH = ATLAS_DIR / "baseline" / "baseline_full.pt"
 LAYERS_PATH = ATLAS_DIR / "layers_full.json"
